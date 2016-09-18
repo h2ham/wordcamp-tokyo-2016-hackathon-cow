@@ -411,6 +411,11 @@ ul {
   clear: both;
 }
 
+.layout-nav {
+  width: 100%;
+  background-color: #3b5998;
+}
+
 .layout-inner {
   width: 100%;
   max-width: 1020px;
@@ -418,10 +423,65 @@ ul {
   overflow: hidden;
 }
 
+.site-title {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 48px;
+  font-size: 4.8rem;
+  margin: 34px 0 30px;
+  line-height: 1;
+  float: left;
+  color: #3b5998;
+}
+
+.site-tagline {
+  float: right;
+  margin-top: 47px;
+}
+
+.nav-button {
+  display: none;
+}
+
+.global-nav-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0;
+}
+
+.global-nav-list-item {
+  width: 340px;
+  text-align: center;
+  box-sizing: border-box;
+  border-right: solid 1px #9ea0a3;
+}
+.global-nav-list-item:first-child {
+  border-left: solid 1px #9ea0a3;
+}
+.global-nav-list-item > a {
+  color: #fff;
+  text-decoration: none;
+  display: block;
+  width: 100%;
+  height: 100%;
+  font-size: 18px;
+  font-size: 1.8rem;
+  line-height: 60px;
+}
+.global-nav-list-item > a:hover {
+  background-color: #9ea0a3;
+}
+
 @media screen and (max-width: 47.9375em) {
   /* ---------------------------
  * Mobile
  * --------------------------- */
+  .nav-button {
+    display: block;
+  }
+  .global-nav-list {
+    display: none;
+  }
 }
 
 @media screen and (min-width: 48em) {

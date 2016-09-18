@@ -4,7 +4,19 @@
 
 @if $mq-all {
   .site-title {
-
+    font-family: 'Cormorant Garamond', serif;
+    @include font-size(48);
+    margin: 34px 0 30px;
+    line-height: 1;
+    float: left;
+    color: $base-color01;
+  }
+  .site-tagline {
+    float: right;
+    margin-top: 47px;
+  }
+  .nav-button {
+    display: none;
   }
 }
 
@@ -12,4 +24,7 @@
 }
 
 @if $mq-sp {
+  .nav-button {
+    display: block;
+  }
 }
