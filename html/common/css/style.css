@@ -1,3 +1,6 @@
+/* ---------------------------
+ * PC and Mobile
+ * --------------------------- */
 /*! normalize.css v4.1.1 | MIT License | github.com/necolas/normalize.css */
 /**
  * 1. Change the default font family in all browsers (opinionated).
@@ -363,4 +366,66 @@ textarea {
   /* 1 */
   font: inherit;
   /* 2 */
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  word-wrap: break-word;
+  background-color: #fff;
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none;
+  color: #000;
+  font-size: 16px;
+  font-size: 1.6rem;
+  line-height: 1.5;
+}
+
+a {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+img {
+  max-width: 100%;
+  vertical-align: bottom;
+}
+
+input {
+  font-size: 16px;
+  font-size: 1.6rem;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.clearfix:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.layout-inner {
+  width: 100%;
+  max-width: 1020px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 47.9375em) {
+  /* ---------------------------
+ * Mobile
+ * --------------------------- */
+}
+
+@media screen and (min-width: 48em) {
+  /* ---------------------------
+ * PC
+ * --------------------------- */
 }
