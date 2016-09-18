@@ -472,6 +472,62 @@ ul {
   background-color: #9ea0a3;
 }
 
+.entry {
+  overflow: hidden;
+  position: relative;
+  margin-bottom: 85px;
+}
+.entry-header {
+  margin-top: 65px;
+}
+.entry-header .entry-title {
+  border-bottom: 1px solid #3b5998;
+  color: #3b5998;
+  font-size: 24px;
+}
+.entry-header .entry-title .fa-wikipedia-w:before {
+  font-size: 0.5em;
+  padding: 4px;
+}
+.entry-body {
+  overflow: hidden;
+}
+.entry-body img {
+  float: left;
+  padding: 4px;
+  border: 1px solid #ccc;
+}
+.entry-body .entry-summary {
+  display: inline-block;
+  width: 56%;
+  padding-left: 30px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.entry .entry-more {
+  width: 100%;
+  margin-top: 0;
+  margin-bottom: 0;
+  display: inline-block;
+  text-align: right;
+  position: absolute;
+  bottom: 0;
+  color: #3b5998;
+  text-decoration: none;
+  margin-right: 5px;
+}
+.entry .entry-more a {
+  color: #3b5998;
+  border-bottom: 2px solid #3b5998;
+  margin-bottom: 0;
+  padding-bottom: 2px;
+  border-bottom-width: 1px;
+}
+.entry .entry-more a:hover {
+  text-decoration: none;
+  color: #3b5998;
+}
+
 @media screen and (max-width: 47.9375em) {
   /* ---------------------------
  * Mobile
