@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>{{ title }}</title>
+<meta name="description" content="{{ description }}">
+<meta name="keywords" content="{{ keywords }}">
+<meta name="viewport" content="width=device-width">
+<link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond:600" rel="stylesheet">
+<link rel="stylesheet" href="./common/css/vendor/font-awesome/font-awesome.css">
+<link rel="stylesheet" href="./common/css/style.css">
+
+</head>
+<body>
+<div class="layout-wrap">
+{% include 'header.html' %}
+
+  <main class="layout-main">
+    <div class="layout-inner">
+      {{ contents | safe }}
+    </div><!-- /.layout-inner -->
+  </main><!-- /.layout-contents -->
+
+{% include 'footer.html' %}
+</div><!-- /.layout-wrap -->
+{% include 'script.html' %}
+</body>
+</html>

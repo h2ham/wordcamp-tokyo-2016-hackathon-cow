@@ -1,0 +1,30 @@
+// ---------------------------
+// layout
+// ---------------------------
+
+@if $mq-all {
+  .layout-header {
+
+  }
+
+  .layout-inner {
+    width: 100%;
+    max-width: $site-max-width;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+
+  .layout-main {
+
+  }
+
+  .layout-footer {
+
+  }
+}
+
+@if $mq-pc {
+}
+
+@if $mq-sp {
+}

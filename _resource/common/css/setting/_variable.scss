@@ -1,0 +1,35 @@
+// ---------------------------
+//
+// variable.scss
+//
+// ---------------------------
+
+$base-color01: #3b5998;
+
+$color-base: #000;
+
+
+$white: #fff;
+$bloack: #000;
+
+// * 3b5998
+
+$site-max-width: 1020px;
+
+
+// ---------------------------
+// mixin
+// ---------------------------
+
+@mixin clearfix {
+  &:after {
+    content: '';
+    display: block;
+    clear: both;
+  }
+}
+
+@mixin font-size($size: 16) {
+  font-size: $size + px;
+  font-size: ($size / 10) + rem;
+}

@@ -1,0 +1,55 @@
+// ---------------------------
+//
+// base.scss
+//
+// ---------------------------
+@if $mq-all {
+
+  html {
+    font-size: 62.5%;
+  }
+
+  body {
+    word-wrap: break-word;
+    background-color: $white;
+    text-size-adjust: none;
+    color: $color-base;
+    @include font-size(16);
+    line-height: 1.5;
+  }
+
+  a {
+    text-decoration: none;
+    color: $color-link;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  img {
+    max-width: 100%;
+    vertical-align: bottom;
+  }
+
+  input {
+    @include font-size(16);
+  }
+
+  ul {
+    list-style: none;
+    padding-left: 0;
+  }
+
+  .clearfix {
+    @include clearfix;
+  }
+}
+
+@if $mq-pc {
+
+}
+
+@if $mq-sp {
+
+}
