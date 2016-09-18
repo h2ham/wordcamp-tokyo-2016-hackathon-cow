@@ -4,11 +4,9 @@
 
 @if $mq-all {
   .global-nav-list {
-    display: flex;
     margin: 0;
   }
   .global-nav-list-item {
-    width: (1020px/3);
     text-align: center;
     box-sizing: border-box;
     border-right: solid 1px #9ea0a3;
@@ -32,10 +30,20 @@
 }
 
 @if $mq-pc {
+  .global-nav-list {
+    display: flex;
+  }
+  .global-nav-list-item {
+    width: (1020px/3);
+  }
 }
 
 @if $mq-sp {
   .global-nav-list {
-    display: none;
   }
+  // .nav-is-show {
+  //   .global-nav-list {
+  //     display: block;
+  //   }
+  // }
 }

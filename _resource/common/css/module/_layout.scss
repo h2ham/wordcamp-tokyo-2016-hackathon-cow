@@ -32,4 +32,18 @@
 }
 
 @if $mq-sp {
+  .layout-nav {
+    width: 200px;
+    position: fixed;
+    top: 50px;
+    right: 0;
+    z-index: 0;
+    transition: .5s;
+    transform: translate(200px, 0);
+  }
+  .nav-is-show {
+    .layout-nav {
+      transform: translate(0, 0);
+    }
+  }
 }

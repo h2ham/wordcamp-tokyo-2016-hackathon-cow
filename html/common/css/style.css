@@ -443,14 +443,10 @@ ul {
 }
 
 .global-nav-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   margin: 0;
 }
 
 .global-nav-list-item {
-  width: 340px;
   text-align: center;
   box-sizing: border-box;
   border-right: solid 1px #9ea0a3;
@@ -476,11 +472,29 @@ ul {
   /* ---------------------------
  * Mobile
  * --------------------------- */
-  .nav-button {
-    display: block;
+  .layout-nav {
+    width: 200px;
+    position: fixed;
+    top: 50px;
+    right: 0;
+    z-index: 0;
+    -webkit-transition: .5s;
+    transition: .5s;
+    -webkit-transform: translate(200px, 0);
+    transform: translate(200px, 0);
   }
-  .global-nav-list {
-    display: none;
+  .nav-is-show .layout-nav {
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
+  }
+  .nav-button {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    display: block;
+    font-size: 30px;
+    font-size: 3rem;
+    z-index: 1;
   }
 }
 
@@ -488,4 +502,12 @@ ul {
   /* ---------------------------
  * PC
  * --------------------------- */
+  .global-nav-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .global-nav-list-item {
+    width: 340px;
+  }
 }

@@ -25,6 +25,11 @@
 
 @if $mq-sp {
   .nav-button {
+    position: fixed;
+    top: 10px;
+    right: 10px;
     display: block;
+    @include font-size(30);
+    z-index: 1;
   }
 }
